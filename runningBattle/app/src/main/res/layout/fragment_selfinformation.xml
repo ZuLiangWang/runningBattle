@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+        <wamcs.runningbattle.view.CircleView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/self_image"
+            android:src="#fff"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/self_image"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:text="me"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:id="@+id/self_score_layout"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18dp"
+            android:gravity="center_vertical"
+            android:layout_marginStart="40dp"
+            android:textColor="#fff"
+            android:layout_weight="7"
+            android:text="我的积分"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2000"
+            android:id="@+id/self_score"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="18dp"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:layout_marginEnd="40dp"
+            android:src ="@drawable/arrow"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:id="@+id/self_rank_layout"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18dp"
+            android:textColor="#fff"
+            android:layout_weight="7"
+            android:gravity="center_vertical"
+            android:layout_marginStart="40dp"
+            android:text="我的排名"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="5"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:id="@+id/self_rank"
+            android:textSize="18dp"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:layout_marginEnd="40dp"
+            android:src ="@drawable/arrow"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:id="@+id/self_about_layout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18dp"
+            android:gravity="center_vertical"
+            android:layout_marginStart="40dp"
+            android:layout_weight="7"
+            android:textColor="#fff"
+            android:text="关于"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:layout_marginEnd="40dp"
+            android:src ="@drawable/arrow"/>
+
+    </LinearLayout>
+
+</LinearLayout>
