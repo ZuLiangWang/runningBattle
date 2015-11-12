@@ -32,10 +32,10 @@ public class MainActivity extends BaseActivity implements ShowStepView{
 
 
     @InjectView(R.id.main_view_pager)
-    private ViewPager viewPager;
+    ViewPager viewPager;
 
     private List<Fragment> fragmentList;
-    private ShowStepPresenter showStepPresenter = new ShowStepPresenterImpl();
+    private ShowStepPresenter showStepPresenter = new ShowStepPresenterImpl(this);
 
 
     @Override

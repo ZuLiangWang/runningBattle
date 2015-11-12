@@ -8,7 +8,11 @@ import com.zuliangwang.runningbattle.view.LoginView;
  */
 public class LoginPresenterImpl implements LoginPresenter {
 
-    public LoginPresenterImpl(LoginView view) {
+    LoginView loginView ;
 
+    public LoginPresenterImpl(LoginView view) {
+        loginView = view;
     }
+
+
 }
