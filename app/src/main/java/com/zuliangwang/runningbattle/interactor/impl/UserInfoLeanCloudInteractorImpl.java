@@ -1,5 +1,8 @@
 package com.zuliangwang.runningbattle.interactor.impl;
 
+import com.avos.avoscloud.AVObject;
+import com.avos.avoscloud.AVUser;
+import com.zuliangwang.runningbattle.RunningBattleApp;
 import com.zuliangwang.runningbattle.bean.UserBean;
 import com.zuliangwang.runningbattle.interactor.UserCloudInteractor;
 
@@ -10,10 +13,19 @@ import java.util.List;
  */
 public class UserInfoLeanCloudInteractorImpl implements UserCloudInteractor{
 
+    private RunningBattleApp app;
+
+    public UserInfoLeanCloudInteractorImpl() {
+        this.app = RunningBattleApp.getRuningBattleApp();
+    }
+
+
     @Override
     public void pushUserInfo(UserBean userBean) {
-
+        AVUser avUser = new AVUser();
+        avUser.setUsername();
     }
+
 
     @Override
     public UserBean getUserInfo() {
